@@ -83,12 +83,13 @@ body {
 	position: absolute;
 	z-index: 1;
 	visibility:hidden;
+	transition:0.3s;
 
 }
 .search_section {
 	transition: 0.5s;
 }
-.search_section:hover span {
+.search_section:hover .map_pin_weather span {
 	visibility:visible;
 }
 
