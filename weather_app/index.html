@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather app using javascript</title>
+</head>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<meta charset="utf-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<header>
+		<div class="title_bar">
+			<div class="title_bar_logo">
+				<img class="logo" src="./images/parasol.png" alt="image of a parasol">
+			</div>
+			<div class="title_bar_text">
+				<h2>Weather Report</h2>
+			</div>
+		</div>
+	</header>
+	<content>
+		<div class="content_wrapper">
+			<div class="search_section">
+				<div class="search_form_div">
+					<form class= "search_form">
+						<input id="search_query" type="text" name="search" placeholder="search">
+						<button id="search_button" type="button" name="submit" value="submit">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</form>	
+				</div>
+				<div class= "map_pin_weather">
+					<button id="map_marker_button" type="button" name="submit">
+						<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+					</button>
+					<span class="tooltiptext">Click here to know the whether at your locatoin
+					</span>	
+				</div>
+			</div>
+			<div class="search_results">
+				<div class="search_results_card">
+					<div class="search_results_card_left col-12 ">
+						<div class="location_card">
+							<p id="location">Bengaluru</p>
+						</div>
+						<div class="temperature_logo_card">
+							<img id="temp_logo"src="http://cdn.weatherapi.com/weather/64x64/day/122.png" alt="weather_icon">
+						</div>
+						<div class="temperature_card">
+							<h1 class = "temp_degree">*</h1>
+							<span>o</span>
+							<h1>C</h1>
+						</div>
+					</div>
+					<div class="search_results_card_right col-12 ">
+						<div class="other_results_card">
+							<p>precipation -
+								<span id="precipitation"></span> 
+							</p>
+							<p>humidity -
+								<span id="humidity"></span> 
+							</p>
+							<p>wind - 
+								<span id="wind"></span>
+							</p>
+						</div>
+						<div class="other_results_description">
+							<p>Condition- 
+								<span id = "weather_description"></span>
+							</p>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</content>
+	<footer>
+		
+	</footer> 
+<script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+</html>
